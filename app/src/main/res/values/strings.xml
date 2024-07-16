@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Tenakata Predictor</string>
+    <string name="title_home">Home</string>
+    <string name="title_admission">Admissions</string>
+    <string name="title_predicition">Predictions</string>
+    <string name="height">Enter Height(feet)</string>
+    <string name="name">Enter name</string>
+    <string name="age">Enter Age</string>
+    <string name="status">Select Marital Status</string>
+    <string name="location">Select GPS Location</string>
+    <string name="gender">Select Gender</string>
+    <string name="image">image</string>
+    <string name="submit">Add Student</string>
+    <string name="choose_image">Choose Image</string>
+    <string name="next">Next</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="iq">Enter IQ Test Results</string>
+    <string name="tenakata_uni">Tenakata University</string>
+    <string name="dream">Making Your Dream Possible</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="submit_data">Submit</string>
+
+    <string name="single">Single</string>
+    <string name="married">Married</string>
+    <string name="divorced">Divorced</string>
+
+
+    <string-array name="gender_category">
+        <item>@string/male</item>
+        <item>@string/female</item>
+
+    </string-array>
+    <string-array name="marital_status">
+        <item>@string/single</item>
+        <item>@string/married</item>
+        <item>@string/divorced</item>
+    </string-array>
+
+
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="submit_location">submit</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="student_admission_list">Student Admission List</string>
+    <string name="export_to_pdf">Export to Pdf</string>
+    <string name="student_prediction_admission_list">Student Prediction Admission List</string>
+    <string name="student_name">Student Name</string>
+    <string name="score">Score</string>
+
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "900321756615",
+    "firebase_url": "https://tenakata-73b84-default-rtdb.firebaseio.com",
+    "project_id": "tenakata-73b84",
+    "storage_bucket": "tenakata-73b84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:900321756615:android:3b47645677bd5160da05e2",
+        "android_client_info": {
+          "package_name": "com.tenakata.tenakatapredictor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "900321756615-qjumi66uqa3mf6pf5gd1bnu0jn45ds7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGGu8hQVlpavV9P78Qcod4mMFrDsRjR2U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "900321756615-qjumi66uqa3mf6pf5gd1bnu0jn45ds7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

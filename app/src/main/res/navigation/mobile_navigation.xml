@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.tenakata.tenakatapredictor.UI.Home.Home"
+        android:label="@string/tenakata_uni"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_admission"
+            app:destination="@id/navigation_admission" />
+        <action
+            android:id="@+id/action_navigation_home_to_viewAdmissionsFragment"
+            app:destination="@id/navigation_predictions" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_admission"
+        android:name="com.tenakata.tenakatapredictor.UI.Admission.Admission"
+        android:label="Admission"
+        tools:layout="@layout/fragment_admission" >
+        <action
+            android:id="@+id/action_navigation_admission_to_navision_admissionTwoFragment"
+            app:destination="@id/navision_admissionTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navision_admissionTwoFragment"
+        android:name="com.tenakata.tenakatapredictor.UI.Admission.AdmissionTwoFragment"
+        android:label="Admission"
+        tools:layout="@layout/fragment_admission_two" >
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="age"
+            app:argType="string" />
+        <argument
+            android:name="gender"
+            app:argType="string" />
+        <argument
+            android:name="maritalStatus"
+            app:argType="string" />
+        <argument
+            android:name="height"
+            app:argType="string" />
+        <argument
+            android:name="iqResult"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_navision_admissionTwoFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment"
+            app:popUpTo="@id/navision_admissionTwoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.tenakata.tenakatapredictor.UI.Map.MapsFragment"
+        android:label="Search GPS Location"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_navision_admissionTwoFragment"
+            app:destination="@id/navision_admissionTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_predictions"
+        android:name="com.tenakata.tenakatapredictor.UI.FetchAdmissions.ViewAdmissionsFragment"
+        android:label="Admission List" />
+</navigation>
